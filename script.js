@@ -7,13 +7,14 @@ function generateRandom() {
 
 var score = 0;
 
-function higher() {
-    
-    if (random < higher) {
-        score++;
+function higher(random) {
+    if (random > higher) {
+        window.alert("You Win!")
     }
 }
 
-function lower() {
-
+function lower(random) {
+    if (random < lower) {
+        window.alert("You Win!")
+    }
 }
