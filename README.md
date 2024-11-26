@@ -1,4 +1,4 @@
-# hello-world-test
+# Higher or Lower Game
 
 ## Simple Website Tutorial
 
