@@ -5,16 +5,18 @@ function generateRandom() {
     resultParagraph.innerHTML = random;
 }
 
-var score = 0;
-
 function higher(random) {
     if (random > higher) {
         window.alert("You Win!")
+    } else {
+        window.alert("You Lose!")
     }
 }
 
 function lower(random) {
     if (random < lower) {
         window.alert("You Win!")
+    } else {
+        window.alert("You Lose!")
     }
 }
