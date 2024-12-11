@@ -5,8 +5,11 @@ function generateRandom() {
     resultParagraph.innerHTML = random;
 }
 
-function higher(random) {
-    if (random > higher) {
+sessionStorage.setItem("baseNumber", random)
+var newRandom = Math.floor(Math.random() * 100 + 1);
+
+function higher(newRandom) {
+    if (newRandom > sessionStorage.getItem) {
         window.alert("You Win!")
     } else {
         window.alert("You Lose!")
