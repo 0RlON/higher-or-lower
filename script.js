@@ -8,7 +8,7 @@ function generateRandom() {
 sessionStorage.setItem("baseNumber", random)
 var newRandom = Math.floor(Math.random() * 100 + 1);
 
-function higher(newRandom) {
+function higher() {
     if (newRandom > sessionStorage.getItem("baseNumber")) {
         window.alert("You Win!")
     } else {
@@ -16,7 +16,7 @@ function higher(newRandom) {
     }
 }
 
-function lower(newRandom) {
+function lower() {
     if (newRandom < sessionStorage.getItem("baseNumber")) {
         window.alert("You Win!")
     } else {
@@ -24,7 +24,7 @@ function lower(newRandom) {
     }
 }
 
-function sameNumber(newRandom) {
+function sameNumber() {
     if (newRandom == sessionStorage.getItem("baseNumber")) {
         window.alert("It was the same number, nothing happens!")
     }
