@@ -20,3 +20,9 @@ function lower(random) {
         window.alert("You Lose!")
     }
 }
+
+function sameNumber(random) {
+    if (random == higher || random == lower) {
+        window.alert("It was the same number, nothing happens!")
+    }
+}
