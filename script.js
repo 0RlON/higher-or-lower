@@ -9,23 +9,23 @@ sessionStorage.setItem("baseNumber", random)
 var newRandom = Math.floor(Math.random() * 100 + 1);
 
 function higher(newRandom) {
-    if (newRandom > sessionStorage.getItem) {
+    if (newRandom > sessionStorage.getItem("baseNumber")) {
         window.alert("You Win!")
     } else {
         window.alert("You Lose!")
     }
 }
 
-function lower(random) {
-    if (random < lower) {
+function lower(newRandom) {
+    if (newRandom < sessionStorage.getItem("baseNumber")) {
         window.alert("You Win!")
     } else {
         window.alert("You Lose!")
     }
 }
 
-function sameNumber(random) {
-    if (random == higher || random == lower) {
+function sameNumber(newRandom) {
+    if (newRandom == sessionStorage.getItem("baseNumber")) {
         window.alert("It was the same number, nothing happens!")
     }
 }
