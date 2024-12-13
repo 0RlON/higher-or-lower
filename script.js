@@ -5,27 +5,27 @@ function generateRandom() {
     resultParagraph.innerHTML = random;
 }
 
-sessionStorage.setItem("baseRandom", random)
+var oldRandom = random;
 var newRandom = Math.floor(Math.random() * 100 + 1);
 
-function higher(newRandom) {
-    if (newRandom > sessionStorage.getItem("baseRandom")) {
+function higher() {
+    if (newRandom > oldRandom) {
         window.alert("You Win!")
     } else {
         window.alert("You Lose!")
     }
 }
 
-function lower(newRandom) {
-    if (newRandom < sessionStorage.getItem("baseRandom")) {
+function lower() {
+    if (newRandom < oldRandom) {
         window.alert("You Win!")
     } else {
         window.alert("You Lose!")
     }
 }
 
-function sameNumber(newRandom) {
-    if (newRandom == sessionStorage.getItem("baseRandom")) {
+function sameNumber() {
+    if (newRandom == oldRandom) {
         window.alert("It was the same number, nothing happens!")
     }
 }
